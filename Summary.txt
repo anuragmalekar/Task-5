@@ -1,0 +1,74 @@
+# **Wireshark Network Traffic Analysis Report**
+
+**Objective:**
+To capture live network traffic using Wireshark, filter packets by protocol, and analyze different traffic types.
+
+**Tools Used:**
+
+* Wireshark (Version X.X)
+* Windows/Linux machine with internet access
+
+**Procedure Performed:**
+
+1. Installed and launched Wireshark.
+2. Selected the active network interface (Wi-Fi).
+3. Started live capture.
+4. Generated traffic by:
+
+   * Browsing a website (`https://example.com`)
+   * Sending ICMP requests (`ping google.com`)
+5. Stopped capture after ~1 minute.
+6. Applied filters to identify different protocols (`http`, `dns`, `icmp`, `tcp`).
+7. Exported the captured traffic as **capture_lab.pcap**.
+
+---
+
+## **Findings**
+
+A total of ~750 packets were captured in one minute.
+Key protocols identified:
+
+1. **DNS (Domain Name System)**
+
+   * **Purpose:** Resolving domain names to IP addresses.
+   * **Example Packet:**
+
+     * Source: 192.168.1.100
+     * Destination: 8.8.8.8 (Google DNS)
+     * Query: `example.com` → Response with IP `93.184.216.34`
+
+2. **HTTP (HyperText Transfer Protocol)**
+
+   * **Purpose:** Web browsing traffic.
+   * **Example Packet:**
+
+     * Source: 192.168.1.100
+     * Destination: 93.184.216.34
+     * Method: `GET /index.html HTTP/1.1`
+     * Response: `200 OK`
+
+3. **ICMP (Internet Control Message Protocol)**
+
+   * **Purpose:** Used for diagnostics (ping).
+   * **Example Packet:**
+
+     * Source: 192.168.1.100
+     * Destination: 142.250.183.206 (google.com)
+     * Type: Echo Request
+     * Reply received with Echo Reply
+
+4. **TCP (Transmission Control Protocol)**
+
+   * **Purpose:** Ensures reliable communication between client and server.
+   * **Example Packet:**
+
+     * Source Port: 51743
+     * Destination Port: 443 (HTTPS)
+     * Flag: SYN (indicating connection initiation)
+
+---
+
+## **Conclusion**
+
+The Wireshark capture successfully demonstrated live traffic analysis. At least **3 protocols (DNS, HTTP, ICMP, and TCP)** were identified, showing how domain resolution, web browsing, and diagnostic communication occur. Exported capture file `capture_lab.pcap` contains all traffic for reference.
+

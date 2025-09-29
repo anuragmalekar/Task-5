@@ -1,0 +1,83 @@
+Created by Wireshark 4.4.9 (v4.4.9-0-g57bf67214076)
+
+File
+
+Name:
+G:\captured.pcapng
+Length:
+6997 kB
+Hash (SHA256):
+97b8a7704f302244cc47a9e88e78296c2fb117f6c0c2481da09a0d850ef9062d
+Hash (SHA1):
+eba6f911156be7938bfce1258a6257ad27019ba1
+Format:
+Wireshark/... - pcapng
+Encapsulation:
+Ethernet
+
+Time
+
+First packet:
+2025-09-29 12:37:53
+Last packet:
+2025-09-29 12:38:55
+Elapsed:
+00:01:01
+
+Capture
+
+Hardware:
+Intel(R) Pentium(R) CPU G640T @ 2.40GHz (with SSE4.2)
+OS:
+64-bit Windows 10 (22H2), build 19045
+Application:
+Dumpcap (Wireshark) 4.4.9 (v4.4.9-0-g57bf67214076)
+
+Interfaces
+
+Interface
+Dropped packets
+Capture filter
+Link type
+Packet size limit (snaplen)
+Ethernet
+0 (0.0%)
+none
+Ethernet
+262144 bytes
+
+Statistics
+
+Measurement
+Captured
+Displayed
+Marked
+Packets
+8712
+8712 (100.0%)
+—
+Time span, s
+61.992
+61.992
+—
+Average pps
+140.5
+140.5
+—
+Average packet size, B
+770
+770
+—
+Bytes
+6706040
+6706040 (100.0%)
+0
+Average bytes/s
+108 k
+108 k
+—
+Average bits/s
+865 k
+865 k
+—
+
